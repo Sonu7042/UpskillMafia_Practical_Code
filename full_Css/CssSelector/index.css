@@ -1,0 +1,24 @@
+body{
+    font-size: 24px;
+}
+
+*{
+    font-family: fantasy;
+}
+
+/* grouping selector */
+#article1, #element {
+    background-color: yellow;
+}
+
+.article2{
+    background-color: blue;
+
+}
+
+
+/* nested seletor */
+#article1 h2{
+    color: red;
+}
+

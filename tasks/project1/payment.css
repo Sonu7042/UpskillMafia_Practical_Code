@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: Tahoma, sans-serif;
+}
+
+/* main */
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* background-color: yellow; */
+}
+
+main .left {
+  /* background-color: blue; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .right {
+  /* background-color: green; */
+  width: 50%;
+  height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  main .left {
+    width: 100%;
+    /* height: 50vh; */
+    height: auto;
+
+  }
+
+  main .right {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
+/* formatting left div content */
+
+.left .left-inside {
+  width: 80%;
+  height: 90%;  
+}
+
+
+.left-inside button {
+  border: none;
+
+}
+.left-inside button a{
+  width: 25%;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.left-inside button a:hover{
+  border: 1px solid blue;
+  color: blue
+}
+
+
+
+.left .left-inside h4{
+  border: b;
+}
+
+.left-inside h4{
+    color: #000000c9;
+}
+
+.left-inside  h2{
+    margin:8px 0;
+}
+
+.left-inside .emailLabel{
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.left-inside .emailInput{
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+}
+
+.left-inside .borderBox{
+    border: 1px solid #a37676;
+    padding: 8px  8px;
+    border-radius: 10px;
+}
+
+.left-inside .showBank{
+    display: flex;
+    align-items: center;
+    width:100%;
+    height: 100px;
+    gap: 5px;
+    /* padding: 10px; */
+   
+}
+
+.left-inside .showBank button{
+    width: 30%;
+    height: 100%;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    padding: 4px 0;
+    border: 1px solid black;
+    
+}
+
+.left-inside .showBank button:hover{
+    border: 2px solid orange;
+    color: orange;
+
+}
+
+.left-inside .showBank .threeDotbtn{
+    width: 10%;
+}
+
+.cardLabel{
+    margin-top: 20px;
+}
+
+.cardInput{
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+}
+
+
+.expiryAndcvc, .countryAndzip{
+    display: flex ;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+   
+}
+
+input{
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+    margin-top: 5px;
+}
+
+
+
+
+
+
+/* right div */
+main .right {
+    padding-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+  }
+  
+  .right .wrap {
+    width: 80%;
+    height: 90vh;
+    height: auto;
+    padding: 5px;
+    
+    /* border: 1px solid black; */
+  }
+
+   .right  .right-inside{
+    /* background-color: red; */
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5rem;
+  }
+  
+  .right .wrap h4 {
+    font-size: 16px;
+  }
+  
+  .right .wrap form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    column-gap: 10px;
+  }
+  
+  .right .wrap form input {
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px;
+  }
+  
+  .right .wrap form button {
+    width: 110px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(0, 0, 255, 0.726);
+    color: white;
+
+    
+  }
+  
+  .right .wrap form button:hover {
+    background-color: blue;
+  }
+  
+  .right .wrap .div1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .right .wrap .pay {
+    width: 100%;
+    padding: 16px 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgba(255, 187, 61, 0.863);
+  }
+  
+  .right .wrap .pay:hover {
+    background-color: orange;
+  }
+  
+  .right .wrap .image-div {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    gap: 5rem;
+    margin: 10px 0;
+  }
+  
+  @media screen and (max-width: 786px) {
+    .right .wrap .image-div {
+      width: 80px;
+      height: 50px;
+      display: flex;
+      gap: 2rem;
+    }
+  }
+  
+  .right .wrap .image-div img {
+    width: 100%;
+    height: 100%;
+  }
+
+
+
+

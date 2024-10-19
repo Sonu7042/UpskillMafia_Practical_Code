@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping_Cart Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="shopping.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav>
+      <!-- logo -->
+      <div class="logo"><h2>campus</h2></div>
+
+      <!-- lists -->
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Brands</li>
+        <li>More</li>
+        <li>Contact</li>
+      </ul>
+
+      <!-- Search bar -->
+      <input type="text" placeholder="Search" />
+
+      <!-- cart -->
+      <div class="cart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <p>0</p>
+      </div>
+
+      <div class="user">
+        <img src="./assets/user.png" alt="" />
+      </div>
+    </nav>
+
+    <!-- main -->
+
+    <main>
+      <div class="left">
+        <div style="width: 80%;">
+          <h1>Shopping Cart</h1>
+        <table class="table-style">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Del</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Capmus</td>
+              <td>- 1 +</td>
+              <td>1200</td>
+              <td><i class="fa-solid fa-xmark"></i></td>
+            </tr>
+
+            <tr>
+              <td>Capmus</td>
+              <td>- 1 +</td>
+              <td>1200</td>
+              <td><i class="fa-solid fa-xmark"></i></td>
+            </tr>
+
+            <tr>
+              <td>Capmus</td>
+              <td>- 1 +</td>
+              <td>1200</td>
+              <td><i class="fa-solid fa-xmark"></i></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <!-- this is right container -->
+      <div class="right">
+        <div class="wrap">
+          <div
+            style="
+              border: 0.5px solid black;
+              padding: 10px;
+              border-color: #bda1a1fb;
+            "
+          >
+            <h4>Enter Coupan Code</h4>
+            <form action="">
+              <input type="text" placeholder="COUPON CODE" />
+              <button>Apply Coupon</button>
+            </form>
+
+            <div class="div1">
+              <p>Sub Total</p>
+              <p>₹4700</p>
+            </div>
+
+            <div class="div1">
+              <p>Taxes(if applicable)</p>
+              <p>₹199</p>
+            </div>
+
+            <div class="div1">
+              <p>Dicount</p>
+              <p>₹0</p>
+            </div>
+
+            <div class="div1">
+              <p>Total</p>
+              <p>₹4999</p>
+            </div>
+          </div>
+
+          <button class="pay"><a href="payment.html">Pay Now ₹4,999</a></button>
+
+          <div class="image-div">
+            <img
+              src="https://w7.pngwing.com/pngs/93/992/png-transparent-razorpay-logo-tech-companies-thumbnail.png"
+              alt="image"
+            />
+
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVblSWoMMVxuWgqte7zW6RFujMkhj4aMYww&s" alt="image">
+
+            <img src="https://e7.pngegg.com/pngimages/156/146/png-clipart-logo-paypal-company-brand-paypal-blue-company-thumbnail.png" alt="image">
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <button class="footerbtn"> <a href="product.html"><i class="fa-solid fa-chevron-left"></i> Continue Shopping</a></button>
+    </footer>
+  </body>
+</html>

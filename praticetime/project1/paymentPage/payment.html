@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="payment.css" />
+  </head>
+  <body>
+    <main>
+      <div class="left">
+        <div class="left-inside">
+          <h4>Checkout</h4>
+          <h2>Contact Details</h2>
+
+          <label class="emailLabel">Email ID</label><br />
+          <input type="text" class="emailInput" placeholder="John Doe" />
+          <h2>Payment</h2>
+
+          <div class="borderBox">
+            <div class="showBank">
+              <button>
+                <i class="fa-regular fa-credit-card"> </i> <br />Card
+              </button>
+              <button>
+                <i class="fa-solid fa-money-check"> </i> <br />Crypto
+              </button>
+              <button>
+                <i class="fa-solid fa-building-columns"></i><br />Bank
+              </button>
+              <button class="threeDotbtn">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+              </button>
+            </div>
+
+            <label class="cardLabel">Card Number</label><br />
+            <input class="cardInput" type="text" placeholder="xxxxxx" />
+            <br />
+
+            <div class="expiryAndcvc">
+              <div>
+                <label>Expiry</label><br />
+                <input type="text" placeholder="MM|YY" />
+              </div>
+
+              <div>
+                <label>CVC</label><br>
+                <input type="text" placeholder="..." />
+              </div>
+            </div>
+
+            <div class="countryAndzip">
+             <div>
+                <label>Country</label><br />
+                <input type="text" placeholder="India" />
+             </div>
+
+             <div>
+                
+              <label>ZIP</label><br />
+              <input type="text" placeholder="xxxxxx" />
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- this is right container -->
+      <div class="right">
+        <div class="right-inside">
+            <h2>Order Summary</h2>
+            <div class="wrap">
+              <div
+                style="
+                  border: 0.5px solid black;
+                  padding: 10px;
+                  border-color: #bda1a1fb; border-radius: 10px;
+                "
+              >
+                <h4>Enter Coupan Code</h4>
+                <form action="">
+                  <input type="text" placeholder="COUPON CODE" />
+                  <button>Apply Coupon</button>
+                </form>
+    
+                <div class="div1">
+                  <p>Sub Total</p>
+                  <p>₹4700</p>
+                </div>
+    
+                <div class="div1">
+                  <p>Taxes(if applicable)</p>
+                  <p>₹199</p>
+                </div>
+    
+                <div class="div1">
+                  <p>Dicount</p>
+                  <p>₹0</p>
+                </div>
+    
+                <div class="div1">
+                  <p>Total</p>
+                  <p>₹4999</p>
+                </div>
+              </div>
+    
+              <button class="pay">Pay Now ₹4,999</button>
+    
+              <div class="image-div">
+                <img
+                  src="https://w7.pngwing.com/pngs/93/992/png-transparent-razorpay-logo-tech-companies-thumbnail.png"
+                  alt="image"
+                />
+    
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtVblSWoMMVxuWgqte7zW6RFujMkhj4aMYww&s" alt="image">
+    
+                <img src="https://e7.pngegg.com/pngimages/156/146/png-clipart-logo-paypal-company-brand-paypal-blue-company-thumbnail.png" alt="image">
+              </div>
+    
+            </div>
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1{
+  margin: 10px 0;
+  text-align: center;
+}
+
+.passwordDiv input{
+  padding: 10px 10px;
+ border-radius: 10px 0px 0px 10px;
+ border:none;
+ font-size: 20px;
+ width: 80%;
+ outline: none;
+ cursor: pointer;
+
+
+
+}
+
+.passwordDiv button{
+  padding: 10px 10px;
+  border-radius: 0px 10px 10px 0px;
+  border:none;
+  background-color: rgba(0, 0, 255, 0.719);
+  font-size: 20px;
+  margin-top: 20px;
+  width: 20%;
+  color: white;
+  
+  
+
+}
+
+.options{
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #eee; */
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.rangeDiv, .charaterDiv, .numberDiv{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}

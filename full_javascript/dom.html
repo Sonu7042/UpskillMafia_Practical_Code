@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+    <style>
+        .container{
+            background-color: blue;
+            width: 450px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 10px;
+            padding: 10px;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px;
+            
+        }
+
+        .rounded{
+            border-radius: 50px;
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container1">
+       <div id="box1" class="box">box 1 </div>
+       <div id="box2" class="box random">box 2</div>
+       <div id="box3" class="box">box 3</div>
+       <div id="box4" class="box">box 4</div>
+       <div id="box5" class="box">box 5</div>
+    </div>
+
+    <form action="">
+        <input type=" text " onkeydown="downfunction()" onkeypress="pressfunction()" onkeyup="upfunction()">
+    </form>
+
+    
+    
+
+
+      <!-- <script src="dom_manipulation.js"></script> -->
+       <script src="eventHandler.js"></script>
+</body>
+</html>

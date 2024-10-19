@@ -1,0 +1,71 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px;
+
+}
+
+
+
+.primary-btn:hover{
+    color: red;
+
+}
+.primary-btn:link{
+    /* color: blue; */
+
+}
+.primary-btn:visited{
+    color: green;
+
+}
+.primary-btn:active{
+    color: rgb(250, 10, 218);
+
+}
+
+/* 
+ul li:first-child{
+    color: red;
+}
+
+ul li:last-child{
+    color:blue;
+} */
+
+/* ul li:nth-child(4){
+    color: green;
+
+} */
+/* 
+ul li:nth-child(2n){
+    background-color: green;
+
+} */
+ul li:nth-child(2n-1){
+    background-color: green;
+
+
+}
+
+
+h2::first-letter{
+    color: blue;
+    font-size: 3rem;
+}
+
+::selection{
+    background: black;
+    color: greenyellow;
+}
+
+p::first-line{
+    background-color: pink;
+}
+
+h3::before{
+    content: "any";
+}
+
+h3::after{
+    content: "*";
+}

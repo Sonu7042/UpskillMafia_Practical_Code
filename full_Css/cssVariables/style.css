@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+
+/* this is global variable */
+:root{
+    --primary-text-color: blue;
+}
+
+.container{
+    padding: 40px;
+}
+
+h1{
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.box{
+    /* this is css variables */
+    --color:red;
+    /* background-color: var(--color); */
+    padding: 20px;
+}
+
+.box h2{
+    margin-bottom: 20px;
+    background-color: var(--color);
+    color: var(--primary-text-color);
+}

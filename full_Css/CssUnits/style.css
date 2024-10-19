@@ -1,0 +1,21 @@
+main {
+  border: 5px solid black;
+  /* width: 50%; */
+  width: 25%;
+}
+
+section {
+  border: 5px dashed green;
+  /* width: 50%; */
+  width: 50vw;
+}
+
+
+body{
+    font-size: 2em;
+}
+header{
+    font-size: 2em;
+}
+
+

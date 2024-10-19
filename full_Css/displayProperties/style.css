@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    
+}
+
+
+/* 
+Dislay Properties are block, inline, inline-block and none
+ */
+
+nav{
+    background-color: black;
+}
+
+ul{
+    text-align: end;
+    padding: 30px;
+}
+
+ li{
+    display: inline;
+    color: white;
+    padding: 10px;
+
+}
+

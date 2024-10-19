@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Booking App</title>
+  </head>   
+  <body>
+    <nav>
+      <div class="logo"><h1>Logo</h1></div>
+      <ul>
+        <li>Home</li>
+        <li>Service</li>
+        <li>Contact Us</li>
+        <li>About Us</li>
+      </ul>
+
+      <div class="username-div">
+        <div class="username">Username</div>
+        <div class="btn">
+          <button class="fa-solid fa-right-from-bracket"></button>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="left">
+        <div class="left-div1">
+          <h2>Added Items</h2>
+
+          <div class="service-price">
+            <p>S.No Service Name</p>
+            <p>Price</p>
+          </div>
+
+          <div class="showItem" id="displayItem">
+          <h4 style="text-align: center; margin-top:10px;">No Items Added</h4> 
+          <p style="text-align: center;">Add items to cart from the service bar</p>
+        
+          </div>
+           
+          <hr>
+          <div class="amount">
+            <p>Total Amount</p>
+            <p id="totalPrice">₹ 0</p>
+          </div>
+        </div>
+
+        <div class="left-div2">
+          <h2>Book Now</h2>
+          <label for="">Full Name</label>
+          <input type="text" placeholder="John" class="nameInput" id="inputName" />
+
+          <div class="inputs">
+            <div class="emailInput">
+              <label for="">Email ID</label>
+              <input type="email" placeholder="exampl@gmail.com" id="inputEmail" />
+            </div>
+
+            <div class="numberInput">
+              <label for="">Phone Number</label>
+              <input type="number" placeholder="00000000000"  id="inputNumber"/>
+            </div>
+          </div>
+
+          <button class="btn2" id="bookbtn">Book Now</button>
+          <p id="belowbtn2text"></p>
+        </div>
+        
+      </div>
+
+
+
+      <div class="right">
+        <h2>Browse Our Service</h2>
+        <p>
+          Click on the add cart button to add the services to your cart or press
+          skip
+        </p>
+        <hr>
+        <div class="imgSection"  id="imgSection">
+            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu3xwA_DflJ4MR3bBO4NpVtF7iSIr3KzGmBw&s" alt="image"> -->
+        </div>
+
+        <div class="changNamePrice">
+            <p id="itemName">Washing Machine</p>
+            <p id="itemPrice" style="color:  blue; font-size: 1.5rem;">₹ 4000</p>
+
+        </div>
+
+        <div class="btns">
+          <button id="skipbtn">Skip Item</button>
+          <button id="addbtn">Add Item</button>
+        </div>
+
+        <hr>
+        <p class="text">Add the item to the cart and book now</p>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

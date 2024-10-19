@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+
+
+nav ul{
+    display: flex;
+    column-gap: 25px;
+    font-size: 18px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav .username-div{
+    background-color: rgba(141, 231, 238, 0.842);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    width: auto;
+    color: blue;
+    font-size: 16px;
+}
+
+.username{
+    padding: 0 10px;
+}
+
+
+
+
+nav button{
+    height: 100%;
+    font-size: 2rem;
+    border-bottom-right-radius:20px ;
+    border-top-right-radius:20px ;
+    color: red;
+    padding: 0 5px;
+    border: none;
+    background-color: rgb(238, 168, 168);
+
+}
+
+
+
+/* main */
+main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    padding: 20px 20px;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+
+.left{
+    width: 40%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    
+}
+
+.right{
+    width: 40%;
+    height: 100%;
+    background-color: white
+    
+}
+
+
+
+@media screen and (max-width:786px) {
+    nav ul{
+       display: none;
+   }
+
+   main{
+    flex-direction: column;
+    height: auto;
+ 
+
+   }
+
+   .left ,.right{
+    width: 100%;
+    height: auto;
+   }
+   
+}
+
+
+.left-div1{
+    width: 100%;
+    height: 50%;
+    background-color:white ;
+    border-radius: 10px;
+}
+
+.left-div2{
+    width: 100%;
+    height: 50%;
+    background-color:white;
+    
+}
+
+
+.left-div1 h2{
+    text-align: center;
+    padding: 5px 0;
+
+}
+
+.left-div1 .service-price{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: #eee;
+    
+}
+
+.left-div1 .showItem{
+    width: 100%;
+    height: 50%;
+    padding-right: 40px;
+    padding-left: 20px;
+    background-color: green;     
+    border-bottom: 0.5 solid #eee;
+    background-color: #fff;
+    overflow-y:scroll
+
+    
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+}
+
+.showItem::-webkit-scrollbar {
+    display: none;  
+  }
+
+
+
+.left-div1 .amount{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    padding-left: 20px;
+    padding-top: 2px;
+}
+
+
+.left-div2{
+    border-radius: 10px;
+    padding-right: 40px;
+      padding-left: 20px;
+  
+}
+
+.left-div2 h2{
+        padding-top: 10px;
+  
+}
+
+.left-div2 .nameInput{
+    width: 100%;
+    margin-right: 40px;
+    padding-left: 20px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+    border-color: #eee;
+    margin-top: 8px;
+    outline: none;
+}
+
+
+.left-div2 label{
+    margin: 8px 0;
+    
+}
+
+.left-div2 .inputs{
+    display: flex;
+    gap: 10px;
+}
+
+ .left-div2 .emailInput{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .left-div2 .numberInput{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .emailInput input, .numberInput input{
+    padding: 10px 5px;
+    border-radius:10px ;
+    border: 1px solid black;
+    border-color: #eee;
+    outline: none;
+
+ }
+
+ .btn2{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px 5px;
+    border-radius:10px ;
+    border: none;
+    font-size: 20px;
+    background-color: rgba(0, 0, 255, 0.486);
+    color: white;
+ }
+
+ #belowbtn2text{
+    color: red;
+    margin: 5px 0
+
+ }
+
+
+ .right{
+    border-radius: 10px;
+    padding: 20px;
+ }
+
+ .right p{
+    font-size: 20px;
+ }
+
+
+ hr{
+    color: #eee;
+    margin-top: 20px;
+ }
+ .right .imgSection{
+    width: 100%;
+    height: 30vh;
+    /* background-color: red; */
+
+    display: flex;
+    justify-content: center;
+    margin: 20px  0px;
+    
+ }
+
+ .imgSection img{
+    height: 100%;
+    width: 50%;
+ }
+
+ .changNamePrice{
+    display: flex;
+    justify-content: space-between;
+ }
+
+
+ .btns{
+    margin: 10px 0px;
+ }
+
+ .btns :first-child{
+    width: 40%;
+    padding: 10px 5px;
+    border-radius:10px ;
+    border: none;
+    font-size: 20px;
+    color: red;
+    background-color: rgba(255, 0, 0, 0.384);
+ }
+
+ .btns :last-child{
+    width: 57%;
+    padding: 10px 5px;
+    border-radius:10px ;
+    border: none;
+    font-size: 20px;
+    color:green;
+    background-color: rgba(0, 128, 0, 0.452);
+    
+ }
+
+ .text{
+    margin-top: 10px;
+    color: blue;
+ }
+
+
+
+ /* formatting for js file element */
+ .inside-div{
+    /* color: red; */
+    display: flex;
+    margin: 10px 0;
+    
+ }
+
+ .p1{
+    margin: 0 10px;
+ }
+ .p2{
+    margin: 0 5px;
+    /* background-color: red;  */
+    width: 250px;
+
+ }
+
+ .p3{
+     margin-left: 130px;
+     /* color: blue;  */
+ }
+
+
+/* for active  */
+.active::placeholder {
+    color: black;
+    font-weight: bold;
+    border: none;
+    /* border: 2px solid blue;  */
+    /* background-color: lightyellow; */
+    
+  }
+  

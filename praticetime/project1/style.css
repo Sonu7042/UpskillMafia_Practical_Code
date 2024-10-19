@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* navbar Css code */
+
+nav {
+  background-color: #fff;
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 10px;
+}
+
+nav .logo {
+  width: 20vh;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+
+}
+
+nav .logo h2::first-letter{
+  font-size: 4rem;
+  color: red ;
+  
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+  font-size: 1.3rem;
+}
+
+nav input {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  width: 10rem;
+}
+
+nav .cart {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+nav .cart p {
+  color: red;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+}
+
+nav .user {
+  width: auto;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+nav .user img {
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  nav ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  nav .cart {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  nav input {
+    display: none;
+  }
+}
+
+/* main section with two divs left and right*/
+
+main {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+}
+
+main .left {
+  /* background-color: blue; */
+  width: 50%;
+  height: 100%;
+}
+
+main .right {
+  /* background-color: green;     */
+  width: 50%;
+  height: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  main .left,
+  main .right {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* formatting of content in left side div */
+
+.left-content {
+  width: 80%;
+  height: 100%;
+  margin: 5rem 4rem;
+}
+
+@media screen and (max-with:800px) {
+  .left-content {
+    width: 100%;
+    height: 100%;
+    font-size: 10rem;
+    padding: 0;
+    margin: 50px 20px;
+  }
+
+  .right img{
+    margin-top: 10px;
+  }
+}
+
+.left-content h1::first-letter {
+  font-size: 2rem;
+  color:blue;
+}
+
+.left-content p {
+  margin: 10px 0;
+}
+
+.left-content button {
+  width: 50%;
+  margin: 15px 0;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: white;
+  background-color:rgba(0, 0, 255, 0.808);
+  border: none;
+  transition: 0.3s ease;
+  transform-origin: center;
+ 
+
+}
+.left-content button a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.left-content button:hover {
+  background-color: blue;
+  transform: scale(1.2);
+    
+    
+
+}
+
+
+/* formatting content of right div */
+.right img {
+  margin-top: 20px;
+  padding: 20px 20px;
+  width: 80%;
+  height: 80%;
+  font-size: 2rem;
+}
+
+
+
+/* this is for service footer*/
+
+footer {
+    background-color: orange;
+    width: 100%;
+    height: 20vh;
+   
+  }
+
+  footer ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+  }
+
+  footer ul li{
+    list-style: none;
+    font-size: 20px;
+    color: #fff;
+  }
+
+
+

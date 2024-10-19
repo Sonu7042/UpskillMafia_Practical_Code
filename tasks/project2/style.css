@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  padding: 0 15px;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.username {
+  background-color: rgba(0, 0, 255, 0.5);
+  padding: 10px 15px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  color: white;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  height: 70vh;
+  /* background-color: red; */
+}
+
+.section1 {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding: 10px 0;
+  /* background-color: green; */
+}
+
+.section1div {
+  width: 450px;
+  height: 400px;
+  padding: 5px 10px;
+  /* background-color: blue; */
+}
+
+.section2 {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+
+  /* background-color: red; */
+}
+
+img {
+  display: inline-block;
+  width: 400px;
+  height: 400px;
+}
+
+button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 20px;
+  background-color: #0099ffb2;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+
+
+@media screen and (max-width: 786px) {
+  ul {
+    display: none;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .section1,
+  .section2 {
+    height: auto;
+    width: auto;
+  }
+
+  .section1div {
+    width: auto;
+    height: auto;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  height: 15vh;
+  background-color: #0099ff;
+  align-items: center;
+}
+
+/* booking service code */
+.screen2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  /* background-color: red; */
+}
+
+.right {
+  width: 30%;
+  height: 80%;
+  /* background-color:green; */
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-radius: 10px;
+}
+
+/* this is code of right div section */
+
+.right-div1 {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.right-div1 h2 {
+  text-align: center;
+  padding: 5px;
+}
+
+.right-div1 .service-price {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  padding-left: 20px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  background-color: #eee;
+}
+
+.right-div1 .showItem {
+  width: 100%;
+  height: 50%;
+  padding-right: 40px;
+  padding-left: 20px;
+  background-color: green;
+  border-bottom: 0.5 solid #eee;
+  background-color: #fff;
+  overflow-y: scroll;
+}
+
+.showItem::-webkit-scrollbar{
+  display: none;
+}
+
+.right-div1 .amount {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+  padding-left: 20px;
+  padding-top: 2px;
+}
+
+/* this is div2 of right element element */
+.right-div2 {
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 4px 5px;
+}
+
+.right-div2 .nameInput {
+  width: 100%;
+  margin-right: 40px;
+  padding-left: 20px;
+  padding: 10px 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+  border-color: #eee;
+  margin-top: 8px;
+  outline: none;
+
+}
+
+
+.emailInput input,
+.numberInput input {
+  padding: 10px 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+  border-color: #eee;
+  outline: none;
+}
+
+.right-div2 .inputs {
+  display: flex;
+  gap: 10px;
+}
+
+.right-div2 .emailInput {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.right-div2 .numberInput {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.btn2 {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  background-color: rgba(0, 0, 255, 0.486);
+  color: white;
+}
+
+/*  this code of left section */
+
+.left {
+  width: 50%;
+  height: 80%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+
+.left .p1 {
+  margin-bottom: 20px;
+}
+
+.left .listItems {
+  height: 80%;
+  padding: 10px;
+  overflow-y: scroll;
+  
+}
+
+.listItems::-webkit-scrollbar{
+  display: none;
+}
+
+.left .text {
+  color: blue;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 786px) {
+  .screen2 {
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 10px;
+    row-gap: 30px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}
+
+/* this is code for third screen */
+
+.screen3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  /* justify-content: center ; */
+
+  /* background-color: red; */
+}
+
+.service-section {
+  width: 100%;
+  height: 30%;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+.service-section .service-div1 {
+  width: 20%;
+  text-align: center;
+}
+
+.service-div1 i {
+  font-size: 50px;
+}
+
+/* subscrible line */
+.subscribe-section {
+  width: 100%;  
+  height: 30vh;
+  background-color: skyblue;
+  display: flex;
+  justify-content: space-around;
+  /* padding: 10px; */
+}
+
+.subscribe-section .subscribeText {
+  width: 30%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  color: white;
+}
+
+.subscribe-section .formdiv {
+  width: 60%;
+  height: 100%;
+  /* background-color: green; */
+  display: flex;
+  align-items: center;
+}
+
+.formdiv form {
+  /* background-color: red; */
+  width: 100%;
+}
+
+.formdiv input {
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  width: 40%;
+  font-size: 20px;
+  background-color: rgba(0, 0, 255, 0.329);
+  color: white;
+}
+.formdiv input::placeholder {
+  color: #fff;
+}
+
+.SubscribeBtn {
+  margin-top: 10px;
+  width: 200px;
+  background-color: #fff;
+  color: blue;
+  font-size: 20px;
+}
+
+.SubscribeBtn:hover {
+  border: 1px solid black;
+  background-color: white;
+}
+
+/* last div */
+.contact-section {
+  width: 100%;
+  height: 30%;
+  /* background-color: #0099ff; */
+  display: flex;
+  justify-content: space-around;
+}
+.lastdiv {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.links ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom h4 {
+  margin-top: 10px;
+}
+
+.contact-sction h3 {
+  margin: 10px 0;
+}
+
+.icons i {
+  font-size: 1.5rem;
+}
+
+
+
+@media screen and (max-width: 786px) {
+  .screen3 {
+    height: auto;
+  }
+
+  .service-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .service-section .service-div1 {
+    width: 100%;
+    height: 50%;
+    margin-top: 30px;
+  
+
+    
+  }
+
+  .service-section,
+  .subscribe-section,
+  .contact-section { 
+    width: 100%;
+
+    /* height: ; */
+    margin-top: 50px;
+  }
+}
+
+
+
+/* style of javascript */
+.rowDiv{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+}
+
+.btnDiv{
+  width:200px ;
+
+}
+
+.removeBtn{
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.26);
+  color: red;
+
+}
+
+.addBtn{
+  width: 100%;
+  background-color:rgba(8, 176, 243, 0.356);
+  color: black;
+  
+}
+
+.showAddDataDiv{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.inside-div{
+  display: flex;
+  margin-top: 5px;
+}
+
+
+.p1{
+  margin: 0 10px;
+}
+.p2{
+  margin: 0 5px;
+  width: 250px;
+
+}

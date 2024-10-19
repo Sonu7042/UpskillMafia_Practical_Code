@@ -1,0 +1,27 @@
+.container {
+  /* width: 300px; */
+  /* height: 200px; */
+  border: 1px solid black;
+  /* overflow: hidden; */
+  /* overflow: hidden; */
+  /* overflow: scroll; */
+  /* overflow: auto; */
+}
+
+.img1 {
+  float: right;
+}
+.img2 {
+  float: left;
+}
+
+.block1{
+    overflow: auto;
+}
+.block2{
+    overflow: auto;
+}
+
+.p2{
+    clear: left
+}

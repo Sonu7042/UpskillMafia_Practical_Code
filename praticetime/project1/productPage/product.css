@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: Geneva, Tahoma, sans-serif;
+}
+
+/* navbar Css code */
+
+nav {
+  background-color: #fff;
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 10px;
+}
+
+nav .logo {
+  width: 20vh;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+nav .logo h2::first-letter{
+  font-size: 4rem;
+  color: red ;
+  
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+  font-size: 1.3rem;
+}
+
+nav input {
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 1rem;
+  width: 10rem;
+}
+
+nav .cart {
+  font-size: 1.5rem;
+  position: relative;
+}
+
+nav .cart p {
+  color: red;
+  position: absolute;
+  top: -15px;
+  right: -10px;
+}
+
+nav .user {
+  width: auto;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+nav .user img {
+  width: 6vh;
+  height: 6vh;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1000px) {
+  nav ul {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  nav .cart {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  nav input {
+    display: none;
+  }
+}
+
+/* main section with two divs left and right*/
+
+main {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  /* background-color: yellow; */
+}
+
+main .left {
+  /* background-color: blue; */
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main .right {
+  /* background-color: green; */
+  width: 50%;
+  height: 100%;
+  padding: 20px 30px;
+}
+
+.right p {
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  main .left {
+    width: 100%;
+    height: auto
+  }
+
+  main .right {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* formatting of right div content */
+
+.right .rate {
+  display: flex;
+  gap: 3rem;
+  margin: 20px 0;
+}
+
+.right .rate .price {
+  font-size: 2rem;
+  background-color: rgba(135, 207, 235, 0.527);
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+.rate .discount span {
+  color: green;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.quantity {
+  display: flex;
+  gap: 3rem;
+  margin-top: 20px;
+}
+
+.quantity select {
+  width: 5rem;
+  font-size: 1.2rem;
+  background-color: #eeee;
+  border: none;
+}
+
+.quantity button {
+  width: 10rem;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  background-color: orange;
+  border-radius: 10px;
+}
+
+/* more image section in bottom */
+footer {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  overflow-x: auto;
+  column-gap: 2rem;
+}
+
+footer div {
+  width: 20%;
+  height: 100%;
+  flex-shrink: 0;
+  text-align: center;
+}
+
+footer div img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 786px) {
+  footer {
+    flex-direction: column;
+    row-gap: 4rem;
+    overflow-x: hidden;
+    height: auto;
+
+  }
+  footer div {
+    width: 100%;
+  }
+
+  footer div img {
+    width: 100%;
+  }
+}

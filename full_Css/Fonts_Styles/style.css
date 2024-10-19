@@ -1,0 +1,27 @@
+h1{
+    text-decoration-style: wavy;
+    text-decoration-color: red;
+}
+
+
+p{
+
+    text-indent: 20px;
+    letter-spacing: 0.1rem  ;
+    word-spacing: 10px;
+}
+
+a{
+    text-decoration-style: wavy;
+}
+
+
+h2{
+    text-shadow: 2px 2px  5px red;
+}
+
+h3{
+    font-family: "Sofadi One", system-uis;
+    font-weight: 600;
+    font-style: italic;
+}

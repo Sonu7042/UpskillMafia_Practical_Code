@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 2</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "YOUR_PUBLIC_KEY",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Logo</div>
+
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+      </ul>
+
+      <div class="username">username</div>
+    </nav>
+
+    <main>
+      <section class="section1">
+        <div class="section1div">
+          <h1 style="font-weight: bold">
+            Revitalize Your <br />
+            Clothes with Expert
+          </h1>
+          <h2 style="color: blue; margin-top: 10px">Launtry Services!</h2>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+            inventore repellendus, ipsa libero mollitia repudiandae excepturi
+            tenetur maiores eaque quod.
+          </p>
+          <button id="bookToday">Book a service today!</button>
+        </div>
+      </section>
+
+      <section class="section2">
+        <img
+          src="https://pics.clipartpng.com/Washing_Machine_PNG_Clipart-644.png"
+          alt="image"
+        />
+      </section>
+    </main>
+
+    <footer>
+      <div><h2>Our Achievements</h2></div>
+
+      <div>
+        <h2>15+</h2>
+        <p>laundry services</p>
+      </div>
+      <div>
+        <h2>240+</h2>
+        <p>happy customers</p>
+      </div>
+      <div>
+        <h2>2+ years</h2>
+        <p>experience</p>
+      </div>
+    </footer>
+
+    <!-- booking service code  -->
+    <div class="screen2" id="screen2">
+      <div class="left">
+        <h2>Our Service</h2>
+        <p class="p1">
+          Click On the Add To Cart Button To Add The Service To Your Cart
+        </p>
+        <hr />
+
+        <div class="listItems" id="listItems">
+          <!-- Item show -->
+        </div>
+
+        <hr />
+        <p class="text">Add the items to the cart and book now</p>
+      </div>
+
+      <div class="right">
+        <div class="right-div1">
+          <h2>Added Items</h2>
+
+          <div class="service-price">
+            <p>S.No Service Name</p>
+            <p>Price</p>
+          </div>
+
+          <div class="showItem" id="displayItem">
+            <h4 style="text-align: center; margin-top: 10px">No Items Added</h4>
+            <p style="text-align: center">
+              Add items to cart from the service bar
+            </p>
+          </div>
+
+          <hr />
+          <div class="amount">
+            <p>Total Amount</p>
+            <p id="totalPrice">₹ 0</p>
+          </div>
+        </div>
+
+        <div class="right-div2">
+          <h2>Book Now</h2>
+          <label for="">Full Name</label>
+          <input
+            type="text"
+            placeholder="John"
+            class="nameInput"
+            id="inputName"
+            readonly
+          />
+
+          <div class="inputs">
+            <div class="emailInput">
+              <label for="">Email ID</label>
+              <input
+                type="email"
+                placeholder="exampl@gmail.com"
+                id="inputEmail"
+              />
+            </div>
+
+            <div class="numberInput">
+              <label for="">Phone Number</label>
+              <input type="number" placeholder="00000000000" id="inputNumber" />
+            </div>
+          </div>
+
+          <button class="btn2" id="bookbtn">Book Now</button>
+          <p id="belowbtn2text"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="screen3">
+      <div class="service-section">
+        <div class="service-div1">
+          <i class="fa-brands fa-aws"></i>
+          <h2>Premium Services</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur ptatem, odit cupiditate iusto
+            repellat eos? Excepturi, nisi! Esse facilis eligendi reprehenderit
+            ab officiis, cumque pariatur, soluta eos eveniet, fugiat
+          </p>
+        </div>
+
+        <div class="service-div1">
+          <i class="fa-solid fa-headset"></i>
+          <h2>Quick Support</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. nisi! Esse
+            facilis eligendi reprehenderit ab officiis, cumque pariatur, soluta
+            eos eveniet, fugiat
+          </p>
+        </div>
+
+        <div class="service-div1">
+          <i class="fa-solid fa-envelope"></i>
+          <h2>Hassle Free Delivery</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.epellat eos?
+            Excepturi, nisi! Esse facilis eligendi reprehenderit ab officiis,
+            cumque pariatur, soluta eos eveniet, fugiat
+          </p>
+        </div>
+
+        <div class="service-div1">
+          <i class="fa-solid fa-money-bill-1-wave"></i>
+          <h2>Affordable Prices</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipist cupiditate iusto
+            repellat eos? Excepturi, nisi! Esse facilis eligendi reprehenderit
+            ab officiis, cumque pariatur, soluta eos eveniet, fugiat
+          </p>
+        </div>
+      </div>
+
+      <div class="subscribe-section">
+        <div class="subscribeText">
+          Subscribe to our <br />
+          newsletter.
+        </div>
+        <div class="formdiv">
+          <form action="">
+            <input type="text" placeholder="Full name" />
+            <input type="email" placeholder="Email" /><br />
+            <button class="SubscribeBtn" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="contact-section">
+        <div class="bottom lastdiv">
+          <h1>Logo</h1>
+          <h4>About Us</h4>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda,
+            quas. dolor sit amet consectetur adipisicing elit.
+          </p>
+        </div>
+
+        <div class="links lastdiv">
+          <h3>Important Links</h3>
+          <ul>
+            <li>About Us</li>
+            <li>Contact Us</li>
+            <li>Privacy Policy</li>
+            <li>Term of Use</li>
+            <li>Refund Policy</li>
+          </ul>
+        </div>
+
+        <div class="contactDetails lastdiv">
+          <h3>Contact</h3>
+          <p>mail@site.com</p>
+          <p>+917646367483</p>
+        </div>
+
+        <div class="follows lastdiv">
+          <h3>Follow Us</h3>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
