@@ -5,7 +5,6 @@
 }
 
 body {
- 
   background-color: #eee;
 }
 
@@ -70,7 +69,6 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 img {
@@ -88,15 +86,12 @@ img {
   border: none;
   border-radius: 10px;
   transition: 0.3s ease;
-  
-  
 }
 
-.bookbtn:hover{
+.bookbtn:hover {
   font-size: 22px;
 
-  transform: scale(1.5) rotate(-10deg)
-
+  transform: scale(1.5) rotate(-10deg);
 }
 
 .mobile-view {
@@ -114,30 +109,28 @@ img {
   margin-right: 20px;
 }
 
-
-button{
+button {
   border: none;
   font-size: 2rem;
   background: none;
 }
-
 
 .menu {
   list-style: none;
   margin: 0;
   padding: 40vh 50px;
   position: absolute;
-  top: 0px; 
+  top: 0px;
   right: 0;
-  display: none; 
+  display: none;
   background-color: #333;
   width: 80%;
-  height:100vh;
+  height: 100vh;
   float: right;
 }
 
 .menu li {
-  padding:  10px;
+  padding: 10px;
   border-bottom: 1px solid #444;
   font-size: 2.5rem;
 }
@@ -148,16 +141,9 @@ button{
   display: block;
 }
 
-
 .hamburger-menu:focus + .menu {
   display: block;
 }
-
-
-
-
-
-
 
 @media screen and (min-width: 786px) {
   .side-menu {
@@ -201,7 +187,3 @@ button{
     width: 100%;
   }
 }
-
-
-
-

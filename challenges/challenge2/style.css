@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://t3.ftcdn.net/jpg/07/54/41/16/360_F_754411622_40ozfVyBBq5b23LnQ9zf9Tz21JEKTr8U.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+
+
+}
+
+
+form {
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.2); 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);     
+    border: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+
+form h1{
+    text-align: center;
+    color: white;
+
+}
+
+form input{
+    border: none;                
+    border-bottom: 2px solid white;
+    outline: none;
+    padding: 10px 5px;
+    background: transparent;
+    font-size: 20px;
+    color: white;
+}
+
+form input::placeholder{
+    color: white;
+}
+
+form button{
+    padding: 10px 5px;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-size: 18px;
+}
+
+form p{
+    text-align: center;
+    color:  white;
+}
