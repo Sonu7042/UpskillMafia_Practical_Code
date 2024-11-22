@@ -99,7 +99,6 @@ function performOperations(n) {
   CheckPrime(n);
   printFactors(n);
   
- 
 }
 
 

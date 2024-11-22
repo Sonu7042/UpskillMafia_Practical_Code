@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Challeng 7</title>
+  </head>
+  <body>
+    <main>
+      <div class="img img1">
+        <img src="./assets//img1.jpg" data-bg="./assets/img1.jpg" alt="image" />
+      </div>
+
+      <div class="img img2">
+        <img src="./assets//img2.jpg" data-bg="./assets/img2.jpg" alt="image" />
+      </div>
+
+      <div class="img img3">
+        <img src="./assets//img3.jpg" data-bg="./assets/img3.jpg" alt="image" />
+      </div>
+
+      <div class="img img4">
+        <img src="./assets//img4.jpg" data-bg="./assets/img4.jpg" alt="image" />
+      </div>
+    </main>
+
+    <script>
+      const imgContainers = document.querySelectorAll(".img");
+
+      imgContainers.forEach((container) => {
+        const imgElement = container.querySelector("img");
+        const bgImage = imgElement.getAttribute("data-bg");
+
+        container.addEventListener("mouseenter", () => {
+          document.body.style.backgroundImage = `url(${bgImage})`;
+        });
+      });
+    </script>
+  </body>
+</html>

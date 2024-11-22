@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    gap: 60px;
+    transition: all 0.2 ease-in;
+}
+
+button{
+    padding: 15px 20px ;
+    border-radius: 10px;
+    outline: none;
+    border: 0.5px solid black;
+    font-size: 20px;
+    transition: all 0.2 ease-out;
+}
+
+button:nth-child(1){
+    background-color: rgb(4, 8, 248);
+    color: white;
+}
+button:nth-child(2){
+    background-color: rgb(12, 248, 4);
+    color: white;
+}
+
+
+
+
+
+

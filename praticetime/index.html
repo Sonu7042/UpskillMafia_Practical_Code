@@ -1,25 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Image Slider</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .image-slider-container {
+            width: 300px;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid #ccc;
+        }
+        .image-slider {
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s;
+        }
+        .slider-image {
+            margin-bottom: 10px;
+        }
+        .slider-image img {
+            width: 100%;
+            display: block;
+        }
+    </style>
 </head>
 <body>
 
-  <script>
+<div class="image-slider-container" id="sliderContainer">
+    <div class="image-slider" id="imageSlider">
+        <div class="slider-image"><img src="https://cdn.britannica.com/10/241010-049-3EB67AA2/highest-mountains-of-the-world-on-each-continent.jpg" alt="Slide 1"></div>
+        <div class="slider-image"><img src="image2.jpg" alt="Slide 2"></div>
+        <div class="slider-image"><img src="image3.jpg" alt="Slide 3"></div>
+        <div class="slider-image"><img src="image4.jpg" alt="Slide 4"></div>
+    </div>
+</div>
 
-    const user= [
-      "tony",
-      "demo",
-      "admin",
-      
-    ]
+<script>
+    const sliderContainer = document.getElementById('sliderContainer');
+    const imageSlider = document.getElementById('imageSlider');
 
-    user.map((value, index)=> console.log( value, index))
+    sliderContainer.addEventListener('mousemove', (e) => {
+        const rect = sliderContainer.getBoundingClientRect();
+        const mouseY = e.clientY - rect.top;
+        const movePercentage = mouseY / rect.height;
 
+        const maxScrollTop = imageSlider.scrollHeight - rect.height;
+        imageSlider.style.transform = `translateY(-${movePercentage * maxScrollTop}px)`;
+    });
+</script>
 
-  </script>
-  
 </body>
 </html>

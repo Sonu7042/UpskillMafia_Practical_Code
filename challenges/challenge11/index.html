@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>challenge 11</title>
+</head>
+<body>
+
+    <button>Hover Me</button>
+    <button>Hover Me</button>
+
+
+    <script>
+         let btns= document.querySelectorAll("button")
+
+
+         btns.forEach(button =>{
+            button.addEventListener("mousemove", (e)=>{
+                const position= button.getBoundingClientRect()
+                const x= e.pageX -position.left -position.width /2
+                const y= e.pageY -position.top -position.height /2
+
+                button.style.transform = `translate(${x * 0.6}px, ${y * 0.12}px)`;
+
+                
+
+
+
+            })
+         })
+    </script>
+
+</body>
+</html>

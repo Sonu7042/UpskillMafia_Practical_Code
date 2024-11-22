@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    position: relative;
+    
+}
+
+#btn{
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    outline: none;
+    border: 0.5px solid black;
+    background-color: rgb(4, 156, 194);
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    transition: all 0.2s ease-out;
+}
+
+
+
