@@ -1,15 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
-}
-
-body{
+    box-sizing: border-box;
+  }
+  
+  body {
+    min-height: 200vh;
+    background-color: #222;
+  }
+  section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
-    height: 100vh;
+    background-color: #fff;
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-size: 100px;
-    color: white;
-    background-color: black;
-}
+    align-items: center;
+    clip-path: circle(100px at left center);
+  }
+  .title, .inner-title {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    color: blue;
+    width: 100%;
+    text-align: center;
+    font-size: 20vw;
+
+  }
+  .inner-title {
+    background-image: url(forest.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: text;
+    color: transparent;
+    z-index: -1;
+  }

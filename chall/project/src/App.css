@@ -1,0 +1,83 @@
+
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.stopwatch-container {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  width: 300px;
+  margin: 50px auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+.time-display {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00ffff;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+
+.button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+
+.button.play {
+  background-color: #00cc99;
+  box-shadow: 0 0 10px #00cc99, 0 0 20px #00cc99;
+}
+
+.button.play:hover {
+  background-color: #00b386;
+  box-shadow: 0 0 15px #00b386;
+}
+
+
+.button.stop {
+  background-color: #ff3333;
+  box-shadow: 0 0 10px #ff3333, 0 0 20px #ff3333;
+}
+
+.button.stop:hover {
+  background-color: #e62e2e;
+  box-shadow: 0 0 15px #e62e2e;
+}
+
+
+.button.reset {
+  background-color: #6600cc;
+  box-shadow: 0 0 10px #6600cc, 0 0 20px #6600cc;
+}
+
+.button.reset:hover {
+  background-color: #5900b3;
+  box-shadow: 0 0 15px #5900b3;
+}

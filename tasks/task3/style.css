@@ -26,6 +26,7 @@ body {
 }
 
 .custom-button {
+  display:block ;
   height: 10%;
   width: 100%;
   font-size: 2vmax;
