@@ -9,7 +9,7 @@ const data = [
     id: 2,
     name: "Jean shirts",
     price: 800,
-    img: "https://googogaaga.com/pub/media/catalog/product/cache/ed00e98b53c365257625fbc922a631b0/i/m/img-7252_1_.jpg",
+    img: "https://cdn.britannica.com/74/190774-050-52CE5745/jeans-denim-pants-clothing.jpg",
   },
   {
     id: 3,

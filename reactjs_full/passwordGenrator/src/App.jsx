@@ -56,7 +56,8 @@ function App() {
           <div className="rangeDiv">
             <input type="range" min={6}  max={50}  onChange={(e)=> setLength(e.target.value)}  value={length}/>
 
-            <label>Length: {length}</label>
+            <label>Length:</label>
+            <span>{length}</span>
           </div>
 
           <div className="numberDiv">
@@ -66,7 +67,7 @@ function App() {
 
           <div className="charaterDiv">
             <input type="checkbox" id="characterInput"  defaultChecked={charAllowed} onChange={()=>setCharAllowed((prev)=>!prev)}/>
-            <label id="characterInput" htmlFor="">Charactors</label>
+            <label id="characterInput" htmlFor="">Char</label>
           </div>
         </div>
       </div>

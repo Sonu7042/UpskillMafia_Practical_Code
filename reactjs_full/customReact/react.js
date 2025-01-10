@@ -8,6 +8,7 @@ function customRender(reactElement, mainContainer){
     // recommand use this method
     for(let prop in reactElement.props){
         if(prop==="children") continue;
+        console.log(prop)
         domElement.setAttribute(prop, reactElement.props[prop])
     }
     mainContainer.appendChild(domElement)

@@ -75,7 +75,6 @@ function renderStudents(studentList) {
     nameDiv.textContent = `Student Name: ${value.name}`;
     card.appendChild(nameDiv);
 
-    const marksDiv = document.createElement("div");
     marksDiv.textContent = `Marks: ${value.marks}`;
     card.appendChild(marksDiv);
 
@@ -87,7 +86,7 @@ function renderStudents(studentList) {
     addressDiv.textContent = `Address: ${value.address}`;
     card.appendChild(addressDiv);
 
-  
+
     container.appendChild(card);
   });
 }

@@ -118,7 +118,7 @@ button{
   padding: 40vh 50px;
   position: absolute;
   top: 0px; 
-  right: 0;
+  right: 0; 
   display: none; 
   background-color: #333;
   width: 80%;
@@ -139,7 +139,7 @@ button{
 }
 
 
-.hamburger-menu:focus + .menu {
+.hamburger-menu:focus+.menu {
   display: block;   
 }
 
@@ -155,7 +155,7 @@ button{
     display: none;
   }
 }
-
+  
 @media screen and (max-width: 786px) {
   .username {
     display: none;
